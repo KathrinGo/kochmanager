@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lebensmittel</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../js/lebensmittel.js"></script>
+    <script>
+        window.onload = function(){
+            loadLebensmittelTable();
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <ul id="headerNav">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="Lebensmittel.html">Lebensmittel</a></li>
+            <li><a href="Vorraet.html">Vorräte</a></li>
+            <li><a href="Rezepte.html">Rezepte</a></li>
+            <li class="edit"><button class="btn" onclick="loadLebensmittelTable()"><i class="material-icons">autorenew</i></button></li>
+
+        </ul>
+    </header>
+    <h1>Lebensmittel</h1>
+    <br>
+    <table id="tableLebensmittel">
+        <tr id="lebensmittelHeading">
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </table>
+</body>
+</html>

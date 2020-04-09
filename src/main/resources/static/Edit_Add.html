@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit_Add_Rezept</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <ul id="headerNav">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Lebensmittel.html">Lebensmittel</a></li>
+        <li><a href="Vorraet.html">Vorräte</a></li>
+        <li><a href="Rezepte.html">Rezepte</a></li>
+    </ul>
+    <br>
+    <img id="edit_Img" src="spiegelei.jpg" alt="Spiegelei" >
+    <br>
+    <div class="edit_container">
+            <form class="editForm">
+                <br>
+                <label id="labTitel" for="titel">Titel</label><br>
+                <input type="text" id="titel" name="titel" placeholder="Rezepttitel">
+                <br><br>
+                <label for="zutatenEdit">Zutaten</label><br>
+                <select id="zutatenEdit" name="zutaten">
+                    <option value="australia">Tomate</option>
+                    <option  value="canada">Gurke</option>
+                    <option  value="usa">Butter</option>
+                </select>
+                <input type="text" id="mengeEdit" name="menge" placeholder="Menge">
+                <select id="einheitEdit" name="einheit"
+                <option value="australia">g</option>
+                <option value="canada">l</option>
+                <option value="usa">kg</option>
+                </select>
+                <br>
+                <br>
+                <label for="beschreibung">Beschreibung</label> <br>
+                <textarea id="beschreibung" name="beschreibung" placeholder="Beschreibung der Kochschritte.." style="height:200px"></textarea>
+
+                <br>
+                <br>
+                <input type="submit" value="Speichern">
+                <input type="submit" value="Abbrechen">
+            </form>
+        </div>
+
+    </body>
+</html>

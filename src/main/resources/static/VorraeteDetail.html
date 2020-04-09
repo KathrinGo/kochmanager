@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VorreateDetails</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<ul id="headerNav">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="Lebensmittel.html">Lebensmittel</a></li>
+    <li><a href="Vorraet.html">Vorräte</a></li>
+    <li><a href="Rezepte.html">Rezepte</a></li>
+
+</ul>
+<br>
+<h3>Bearbeite deine Vorräte!</h3>
+<div class="edit_container">
+    <form class="editForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <br><br>
+        <label for="mdh">MDH</label><br>
+        <input type="date" id="mdh" name="mdh" placeholder="MDH">
+        <br><br>
+        <label for="menge">Mengenangabe</label><br>
+        <input type="text" id="menge" name="menge" placeholder="Menge">
+        <select id="einheit" name="einheit"
+        <option value="australia">g</option>
+        <option value="canada">l</option>
+        <option value="usa">kg</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Speichern">
+        <input type="submit" value="Abbrechen">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+h1, h3, h4{
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+
+/*
+   Navigation Header
+*/
+body {margin: 0;}
+
+ul {
+    list-style-type: none;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffc400;
+    border-radius: 10px;
+}
+li {
+
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffd740;
+}
+
+li a.active {background-color: #ff8f00;}
+
+@media screen and (max-width: 600px) {
+    li.right,
+    li {float: none;}
+}
+/*
+Tabellen
+ */
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Verdana, Arial, sans-serif;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffd740;
+}
+
+th, td {
+    padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid white;
+}
+
+.css-mine {
+    margin-top: 2em;
+    clear: both;
+}
+
+body {
+    margin: 1.5em;
+}
+
+tr:nth-child(odd){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+/*
+Cards
+ */
+.card {
+    box-shadow: 0 6px 14px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 23%;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.4);
+}
+
+#imgCard {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: auto;
+
+}
+
+.container {
+    padding: 2px 16px;
+}
+/*
+Details Rezepte
+ */
+#imgRezeptDetail {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 60px;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: Verdana, Arial, sans-serif;
+    color: black;
+}
+
+.bgImg {
+    background: url("../spiegelei.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+}
+
+#Rezepttitel{
+    padding-top: 70px;
+}
+
+#zutaten{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 22px;
+}
+#tableZutaten{
+    background-color: white;
+    border-collapse: collapse;
+    border: 0px;
+}
+ol{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+}
+.rowZutat{
+    padding: 1em;
+    background: white;
+    text-align: center;
+}
+
+#kochSchritte{
+    text-align: center;
+}
+/*
+Delete, edit and save rezepte
+ */
+.edit{
+    float: right;
+    color: white;
+    align-items: center;
+    text-shadow: 1px 1px 1px  #ff8f00;
+    font-size: 2em;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+/*
+    Edit/Save Ansicht Rezepte
+ */
+#edit_Img {
+    margin-right: 10%;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+input[type=text], select, textarea, input[type=date] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#zutatenEdit{
+    width: 30%;
+}
+#mengeEdit{
+    width: 15%;
+}
+#einheitEdit{
+    width: 13%;
+}
+
+#menge{
+    width: 40%;
+}
+#einheit{
+    width: 20%;
+}
+
+input[type=submit] {
+    width: 15%;
+    background-color: #ffc400;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #ff8f00;
+}
+
+.edit_container {
+    border-radius: 9px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.editForm{
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+label{
+    font-weight: bolder;
+}
+
+/*
+Lebensmittel bearbeiten
+ */
+/* Style buttons */
+.btn {
+    background-color: #ffc400; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    float:right;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #ffd740;
+}
