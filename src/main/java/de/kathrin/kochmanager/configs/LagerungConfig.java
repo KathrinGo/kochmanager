@@ -1,6 +1,5 @@
 package de.kathrin.kochmanager.configs;
 
-import de.kathrin.kochmanager.entities.Lagerung;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

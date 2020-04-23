@@ -25,9 +25,6 @@ public class Lebensmittel {
     @NonNull
     @Column(name = "MDH")
     private LocalDate mdh;
-    @ManyToOne//(cascade = {CascadeType.MERGE})
-    @JoinColumn(name = "ID_LAGERUNG")
-    private Lagerung lagerung;
     @JoinColumn(name = "MENGE_LAGERUNG")
     @OneToOne(cascade = {CascadeType.ALL})
     private Menge menge;

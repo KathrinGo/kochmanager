@@ -2,7 +2,6 @@ package de.kathrin.kochmanager.repos;
 
 import de.kathrin.kochmanager.Exception.AnzahlKleinerNull;
 import de.kathrin.kochmanager.SpringBaseTest;
-import de.kathrin.kochmanager.entities.Lagerung;
 import de.kathrin.kochmanager.entities.Lebensmittel;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

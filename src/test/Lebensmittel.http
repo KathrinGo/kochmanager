@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/Lebensmittel
+
+###
+
+GET http://localhost:8080/api/Lebensmittel/81
+
+###
+DELETE http://localhost:8080/api/Lebensmittel/81
+
+###
+
+PUT http://localhost:8080/api/Lebensmittel/81
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Butter",
+  "mdh": "2020-05-06",
+  "lagerung": null,
+  "haltbar": false,
+  "tHaltbar": true
+}
+
+###
+
+POST http://localhost:8080/api/Rezept/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Eier",
+  "mdh": "2020-05-06",
+  "lagerung": null,
+  "haltbar": false
+}
+
+###
+
+
