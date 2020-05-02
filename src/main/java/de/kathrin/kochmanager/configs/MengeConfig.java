@@ -11,7 +11,7 @@ public class MengeConfig {
     @Bean
     public Menge mengeHundertGramm(){
         Menge menge = new Menge();
-        menge.setEinheit(Einheit.GRAMM);
+        menge.setEinheit(Einheit.g);
         menge.setMenge(100);
         return menge;
     }
@@ -19,7 +19,7 @@ public class MengeConfig {
     @Bean
     public Menge mengeHundertLiter(){
         Menge menge = new Menge();
-        menge.setEinheit(Einheit.LITER);
+        menge.setEinheit(Einheit.l);
         menge.setMenge(100);
         return menge;
     }
@@ -27,7 +27,7 @@ public class MengeConfig {
     @Bean
     public Menge mengeDreiStueck(){
         Menge menge = new Menge();
-        menge.setEinheit(Einheit.STÜCK);
+        menge.setEinheit(Einheit.Stück);
         menge.setMenge(3);
         return menge;
     }

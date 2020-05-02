@@ -12,6 +12,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+
 @Table(name = "MENGE")
 public class Menge {
     @Id

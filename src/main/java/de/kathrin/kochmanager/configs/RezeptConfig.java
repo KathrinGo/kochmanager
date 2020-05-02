@@ -15,7 +15,7 @@ import java.util.Map;
 @Configuration
 @Slf4j
 public class RezeptConfig {
-    @Value("#{zutatEi}")
+   /* @Value("#{zutatEi}")
     private Zutat zutatEi;
     @Value("#{zutatButter}")
     private Zutat zutatButter;
@@ -49,5 +49,5 @@ public class RezeptConfig {
         rezept.setBeschreibung("1.Pürieren sie den Apfel zu einem Muus.");
         return rezept;
     }
-
+*/
 }

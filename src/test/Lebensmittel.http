@@ -1,38 +1,44 @@
-GET http://localhost:8080/api/Lebensmittel
+GET http://localhost:8085/api/Lebensmittel
 
 ###
 
 GET http://localhost:8080/api/Lebensmittel/81
 
 ###
-DELETE http://localhost:8080/api/Lebensmittel/81
+DELETE http://localhost:8085/api/Lebensmittel/1
 
 ###
 
-PUT http://localhost:8080/api/Lebensmittel/81
+PUT http://localhost:8085/api/Lebensmittel/1
 Content-Type: application/json
 Accept: application/json
 
 {
   "name": "Butter",
   "mdh": "2020-05-06",
-  "lagerung": null,
-  "haltbar": false,
-  "tHaltbar": true
+  "haltbar": "false",
+  "menge": {
+  "einheit": "STÜCK",
+    "menge": "200"
+  }
 }
 
 ###
 
-POST http://localhost:8080/api/Rezept/
+POST http://localhost:8085/api/Lebensmittel/
 Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Eier",
+  "name": "Zucker",
   "mdh": "2020-05-06",
-  "lagerung": null,
-  "haltbar": false
+  "haltbar": true,
+  "menge": {
+    "einheit": "GRAMM",
+    "menge": "100"
+  }
 }
+
 
 ###
 

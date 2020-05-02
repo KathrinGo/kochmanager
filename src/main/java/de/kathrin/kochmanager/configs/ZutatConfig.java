@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Slf4j
 public class ZutatConfig {
-    @Value("#{lebensmittelButter}")
+   /* @Value("#{lebensmittelButter}")
     private Lebensmittel lebensmittelButter;
     @Value("#{lebensmittelEi}")
     private Lebensmittel lebensmittelEi;
@@ -53,5 +53,5 @@ public class ZutatConfig {
         zutat.setLebensmittel(lebensmittelMilch);
         zutat.setMenge(hundertLiter);
         return zutat;
-    }
+    }*/
 }

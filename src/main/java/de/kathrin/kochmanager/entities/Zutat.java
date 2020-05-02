@@ -12,15 +12,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
 @Table(name = "ZUTAT")
 public class Zutat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ID")
     private Long id;
-    @JoinColumn(name = "ID_LEBENSMITTEL")
-    @OneToOne(cascade = {CascadeType.PERSIST})
-    private Lebensmittel lebensmittel;
+    private String name;
     @JoinColumn(name = "MENGE_REZEPT")
     @OneToOne(cascade = {CascadeType.ALL})
     private Menge menge;

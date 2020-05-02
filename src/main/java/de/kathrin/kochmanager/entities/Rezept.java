@@ -10,6 +10,7 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
 @Table(name = "REZEPTE")
 public class Rezept {
     @Id
@@ -19,22 +20,30 @@ public class Rezept {
     @OneToMany(mappedBy = "rezept", cascade = CascadeType.ALL)
     private List<Zutat>zutaten=new ArrayList<>();
     @Column(name = "TITEL")
-    private String title;
+    private String titel;
     @Column(name = "BESCHREIBUNG")
     private String beschreibung;
     @Column(name = "ZUTATEN_VOLLSTÄNDIG")
     boolean zutatVollstaendig;
+    @OneToOne(cascade = {CascadeType.ALL})
+    private ImageRezept imageRezept;
+    @Column(name="url")
+    private String url;
 
-    public boolean lebensmittelVorraetig(Lagerung lagerung) {
-        Objects.nonNull(lagerung);
+
+
+   /* public boolean lebensmittelVorraetig(List<Lebensmittel>lebensmittel) {
+
         zutatVollstaendig = false;
 
         zutaten.forEach((zutat)->{
-            if(lagerung.getVorrat().contains(zutat.getLebensmittel())){
-                for (Lebensmittel l:lagerung.getVorrat()) {
+            if(lebensmittel.contains(zutat.getLebensmittel())){
+                for (Lebensmittel l:lebensmittel) {
                     if(l.equals(zutat.getLebensmittel())) {
-                        if(l.getMenge().getMenge()>=zutat.getMenge().getMenge()&&l.getMenge().getEinheit().equals(zutat.getMenge().getEinheit())) {
-                            zutatVollstaendig=true;
+                        if(zutat.getMenge().getMenge()>=l.getMenge().getMenge()){
+                            zutatVollstaendig = true;
+                        }else {
+                            zutatVollstaendig = false;
                         }
                     }
                 }
@@ -42,7 +51,7 @@ public class Rezept {
         });
 
         return zutatVollstaendig;
-    }
+    }*/
     public void addZutaten(Zutat zutat){
         zutaten.add(zutat);
     }

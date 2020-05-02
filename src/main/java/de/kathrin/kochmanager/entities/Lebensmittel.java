@@ -14,6 +14,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @Entity
 @Table(name = "LEBENSMITTEL")
+
 public class Lebensmittel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,23 +23,22 @@ public class Lebensmittel {
     @NonNull
     @Column(name = "NAME")
     private String name;
-    @NonNull
     @Column(name = "MDH")
-    private LocalDate mdh;
+    private String mdh;
     @JoinColumn(name = "MENGE_LAGERUNG")
     @OneToOne(cascade = {CascadeType.ALL})
     private Menge menge;
     @Column(name = "HALTBAR")
     private boolean haltbar;
 
-     public Lebensmittel(String name, LocalDate mdh, Einheit einheit) {
+     public Lebensmittel(String name, String mdh, Einheit einheit) {
         super();
         this.name = name;
         this.mdh=mdh;
         this.menge=new Menge(einheit,0);
-        this.haltbar=istHaltbar();
+       // this.haltbar=istHaltbar();
     }
-
+/*
     public boolean istHaltbar() {
         Objects.nonNull(mdh);
         if (LocalDate.now().isBefore(mdh)) {
@@ -47,7 +47,7 @@ public class Lebensmittel {
             return false;
         }
     }
-
+*/
     public void mengeHinzufügen(int menge){
          this.menge.mengeHinzufügen(menge);
     }

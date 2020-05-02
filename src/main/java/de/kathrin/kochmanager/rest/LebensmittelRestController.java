@@ -11,6 +11,7 @@ import java.util.Optional;
 //Diese Klasse setzt die Rest Anfragen um. Mit GET, POST; POST DELETE.
 //Anfragen an die DB, Verändern, Anlegen, Löschen
 @RestController
+@CrossOrigin
 @RequestMapping("/api/Lebensmittel")
 public class LebensmittelRestController {
     @Autowired
